@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=« en »>
+<head>
+    <meta charset=« UTF-8 »>
+    <meta name=« viewport » content=« width=device-width, initial-scale=1.0 »>
+    <title>Rouji Games Live</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+
+        #player {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id=« player »></div>
+
+<script src=« https://player.twitch.tv/js/embed/v1.js »></script>
+
+<script>
+    new Twitch.Player(« player », {
+        channel: « Rouji_games »,
+        width: « 100% »,
+        height: « 100% »,
+        layout: « video »,
+        autoplay: true,
+        muted: false,
+        parent: [« roujigames.github.io »]
+    });
+</script>
+
+</body>
+</html>
