@@ -15,30 +15,20 @@
             overflow: hidden;
         }
 
-        #player {
-            width: 100vw;
-            height: 100vh;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 
 <body>
 
-<div id=« player »></div>
-
-<script src=« https://player.twitch.tv/js/embed/v1.js »></script>
-
-<script>
-    new Twitch.Player(« player », {
-        channel: « Rouji_games »,
-        width: « 100% »,
-        height: « 100% »,
-        layout: « video »,
-        autoplay: true,
-        muted: false,
-        parent: [« roujigames.github.io »]
-    });
-</script>
+<iframe
+    src=« https://player.twitch.tv/?channel=Rouji_games&parent=roujigames.github.io&autoplay=true&muted=false »
+    allowfullscreen>
+</iframe>
 
 </body>
 </html>
